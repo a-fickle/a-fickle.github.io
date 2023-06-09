@@ -1,0 +1,137 @@
+############################
+# --- Settings --- #
+############################
+
+# Name of website
+title: Geek Life
+
+# Show in the footer
+author: a-fickle
+
+###############################################
+# --- List of links in the navigation bar --- #
+###############################################
+
+navbar-links:
+  About Me: "aboutme"
+  Tags: "tags"
+
+################
+# --- Logo --- #
+################
+avatar: "/assets/img/Logo.png"
+
+# By default, the image is cut into a circle. 
+round-avatar: true
+
+#####################################
+# --- Footer social media links --- #
+#####################################
+
+social-network-links:
+#  github: a-fickle
+#  email: sypemail@163.com
+#  facebook: yourname
+#  twitter: yourname
+#  youtube: yourname
+#  instagram: yourname
+#  spotify: yourname
+#  telephone: +8615*********
+#  steam: yourname
+#  google-scholar: your google scholar
+
+
+###########################
+# --- General options --- #
+###########################
+
+## Select which social network share links to show in posts
+# share-links-active:
+#   twitter: true
+#   facebook: true
+#   linkedin: true
+#   vk: false
+
+# Display the link to my website in the footer
+url-pretty: "Geek Life"
+
+# Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
+excerpt_length: 5
+
+# Whether or not to show an excerpt for every blog post in the feed page
+feed_show_excerpt: true
+
+# Whether or not to show a list of tags below each post preview in the feed page
+feed_show_tags: true
+
+# Add a search button to the navbar
+post_search: true
+
+# Add a button in the footer to edit the current page. Only works if your website is hosted on GitHub
+edit_page_button: false
+
+# Allow sub-menu items (second-level navigation menu items) to be longer than the top-level menu
+# If this setting is off, then long sub-menu words might get cut off
+navbar-var-length: false
+
+# The keywords to associate with your website, for SEO purposes
+keywords: "other,恶意软件分析"
+
+######################################
+# --- Colours / background image --- #
+######################################
+
+# Colour values can be any valid CSS colour
+
+navbar-col: "#EAEAEA"
+navbar-text-col: "#404040"
+navbar-border-col: "#DDDDDD"
+page-col: "#FFFFFF"
+text-col: "#404040"
+link-col: "#008AFF"
+hover-col: "#0085A1"
+footer-col: "#EAEAEA"
+footer-text-col: "#777777"
+footer-link-col: "#404040"
+footer-hover-col: "#0085A1"
+
+
+################
+# --- Misc --- #
+################
+
+# Ruby Date Format to show dates of posts
+date_format: "%B %-d, %Y"
+
+
+#################################################################################
+# --- You don't need to touch anything below here (but you can if you want) --- #
+#################################################################################
+
+# Output options (more information on Jekyll's site)
+timezone: "Asia/Shanghai"
+markdown: kramdown
+highlighter: rouge
+permalink: /:year-:month-:day-:title/
+paginate: 5
+
+kramdown:
+  input: GFM
+
+# Default YAML values (more information on Jekyll's site)
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      comments: true  # add comments to all blog posts
+      social-share: true # add social media sharing buttons to all blog posts
+  -
+    scope:
+      path: "" # any file that's not a post will be a "page" layout by default
+    values:
+      layout: "page"
+
+
