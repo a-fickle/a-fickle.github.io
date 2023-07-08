@@ -99,7 +99,7 @@ class Metasploit3 < Msf::Auxiliary
 			'Description'  => 'My quick scanner',                
 			'Author'       => 'Your name here',                
 			'License'      => 'MSF_LICENSE'                
-		)
+		)           
 		register_options(             
 			[            
 				Opt::RPORT(12345)                 
