@@ -86,11 +86,11 @@ msf auxiliary(ftp_version) > set THREADS 50
 msf auxiliary(ftp_version) > run              
 #### 1.2.6 编写自定义扫描器：             
 * 实例代码（Ruby）：          
-       
+
 #Metasploit          
 require 'msf/core'           
 class Metasploit3 < Msf::Auxiliary          
-    include Msf::Exploit::Remote::Tcp               
+&emsp;include Msf::Exploit::Remote::Tcp               
     include Msf::Auxiliary::Scanner         
     def initialize          
         super(             
