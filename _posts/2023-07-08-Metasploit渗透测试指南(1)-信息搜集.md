@@ -65,6 +65,7 @@ msf auxiliary(ssh_version) > run
 #### 1.2.5 FTP扫描：             
 * 作用：对使用FTP协议的服务器进行扫描、识别和查点。       
 * 命令：             
+     
 msf > use scanner/ftp/ftp_version (识别出FTP服务器)              
 msf auxiliary(ftp_version) > set RHOSTS 192.168.1.0/24                            
 msf auxiliary(ftp_version) > set THREADS 255                    
@@ -77,6 +78,7 @@ msf auxiliary(anonymous) > run
 #### 1.2.6 SNMP扫描：             
 * 作用：对使用SNMP协议的网络设备进行扫描，对一个IP或一段IP使用字典来猜解SNMP团体字符串(相当于查询设备信息或写入设备配置参数时所需的口令)。       
 * 命令：             
+     
 msf > use scanner/snmp/snmp_enum (扫描SNMP网络设备)              
             
 msf > use scanner/snmp/snmp_login (猜解SNMP团体字符串)              
