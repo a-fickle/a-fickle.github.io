@@ -28,7 +28,7 @@ cover-img: /assets/img/2023-07-08-Metasploit渗透测试指南(1)-信息搜集/c
           
 root@bt:~# nslookup                  
 set type=mx     
-> [域名]             
+\> [域名]             
          
 ### 1.2 主动信息搜集：            
 #### 1.2.1 Nmap：               
