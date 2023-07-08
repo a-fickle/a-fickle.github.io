@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Metasploit渗透测试指南(1)-信息搜集
+title: Metasploit渗透测试指南1-信息搜集
 subtitle: Author：a-fickle
 date: 2023-07-08 00:00:00 +0800
 tag: [Metasploit,渗透测试]
-cover-img: /assets/img/2023-07-08-Metasploit渗透测试指南(1)-信息搜集/cover.png
+cover-img: /assets/img/2023-07-08-Metasploit渗透测试指南1-信息搜集/cover.png
 ---
 
 **前言：**            
