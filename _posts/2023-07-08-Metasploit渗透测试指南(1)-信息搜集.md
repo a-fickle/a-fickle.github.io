@@ -34,7 +34,6 @@ set type=mx
 * 作用：端口扫描。       
 * 命令：nmap -sS -Pn (-A) [IP adress]                  
 * 高级：TCP空闲扫描（找到一台空闲主机，冒充该空闲主机的IP地址对目标主机的某个端口进行探测，空闲主机要求使用递增IP ID）            
-            
 1、Metasploit寻找满足条件的空闲主机：            
 msf > use auxiliary/scanner/ip/ipidseq      
 msf auxiliary(ipidseq) > set RHOSTS 192.168.1.0/24           
