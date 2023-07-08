@@ -25,7 +25,6 @@ cover-img: /assets/img/2023-07-08-Metasploit渗透测试指南(1)-信息搜集/c
 #### 1.1.3 NSLookup：       
 * 作用：DNS查询，获得更详细的信息。           
 * 命令：           
-          
 root@bt:~# nslookup                  
 set type=mx     
 \> [域名]             
