@@ -91,20 +91,20 @@ msf auxiliary(ftp_version) > run
 require 'msf/core'           
 class Metasploit3 < Msf::Auxiliary          
 &emsp;include Msf::Exploit::Remote::Tcp               
-    include Msf::Auxiliary::Scanner         
-    def initialize          
-        super(             
-            'Name'         => 'My custom TCP scan',                
-            'Version'      => '$Revision: 1 $',                
-            'Description'  => 'My quick scanner',                
-            'Author'       => 'Your name here',                
-            'License'      => 'MSF_LICENSE'                
-        )           
-        register_options(             
-            [            
-                Opt::RPORT(12345)                 
-            ],self.class)               
-    end           
+&emsp;include Msf::Auxiliary::Scanner         
+&emsp;def initialize          
+&emsp;&emsp;super(             
+&emsp;&emsp;&emsp;'Name'         => 'My custom TCP scan',                
+&emsp;&emsp;&emsp;'Version'      => '$Revision: 1 $',                
+&emsp;&emsp;&emsp;'Description'  => 'My quick scanner',                
+&emsp;&emsp;&emsp;'Author'       => 'Your name here',                
+&emsp;&emsp;&emsp;'License'      => 'MSF_LICENSE'                
+&emsp;&emsp;)           
+&emsp;&emsp;register_options(             
+&emsp;&emsp;&emsp;[            
+&emsp;&emsp;&emsp;&emsp;Opt::RPORT(12345)                 
+&emsp;&emsp;&emsp;],self.class)               
+&emsp;end           
 (保存在路径module/auxiliary/scanner/下，命名为simple_tcp.rb)           
          
 * 命令：msf > use auxiliary/scanner/simple_tcp              
