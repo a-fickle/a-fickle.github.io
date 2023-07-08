@@ -111,7 +111,6 @@ class Metasploit3 < Msf::Auxiliary
               
            
 &nbsp;             
-&nbsp;
 **参考文献：**《Metasploit-The Penetration Tester's Guide》                
                
               
