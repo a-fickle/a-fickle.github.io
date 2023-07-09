@@ -25,6 +25,7 @@ cover-img: /assets/img/2023-07-08-Metasploit渗透测试指南1-信息搜集/cov
 * 作用：发现为该域名提供服务的服务器IP地址。           
 * 网址：http://searchdns.netcraft.com/                  
 * 注意：在发现特定服务器IP地址后，可以针对IP地址再一次whois查询，得到该域名所属组织的服务器的IP地址段，也可以根据地址段猜测是组织。            
+
 #### 1.3 NSLookup：       
 * 作用：DNS查询，获得更详细的信息。           
 * 命令：           
@@ -44,12 +45,14 @@ msf auxiliary(ipidseq) > set THREADS 50
 msf auxiliary(ipidseq) > run        
 2、从结果中找到 Incremental 的主机，使用它的IP地址通过nmap进行端口扫描：         
 nmap -Pn -sI [空闲主机IP] [目标IP]               
+
 #### 2.2 SMB协议扫描：             
 * 作用：获取Windows系统版本号。       
 * 命令：             
 msf > use scanner/smb/smb_version              
 msf auxiliary(smb_version) > set RHOSTS 192.168.1.155                            
 msf auxiliary(smb_version) > run              
+
 #### 2.3 mssql扫描：             
 * 作用：搜寻配置不当的Microsoft SQL Server。       
 * 命令：             
@@ -57,12 +60,14 @@ msf > use scanner/mssql/mssql_ping
 msf auxiliary(mssql_ping) > set RHOSTS 192.168.1.0/24                            
 msf auxiliary(mssql_ping) > set THREADS 255                    
 msf auxiliary(mssql_ping) > run              
+
 #### 2.4 SSH服务器扫描：             
 * 作用：对运行着SSH的主机的SSH版本进行识别，找到该版本没有安装补丁的安全漏洞。       
 * 命令：             
 msf > use scanner/ssh/ssh_version              
 msf auxiliary(ssh_version) > set THREADS 50                    
 msf auxiliary(ssh_version) > run              
+
 #### 2.5 FTP扫描：             
 * 作用：对使用FTP协议的服务器进行扫描、识别和查点。       
 * 命令：             
@@ -76,6 +81,7 @@ msf > use auxiliary/scanner/ftp/anonymous (检查FTP服务器是否允许匿名�
 msf auxiliary(anonymous) > set RHOSTS 192.168.1.0/24                            
 msf auxiliary(anonymous) > set THREADS 50                    
 msf auxiliary(anonymous) > run              
+
 #### 2.6 SNMP扫描：             
 * 作用：对使用SNMP协议的网络设备进行扫描，对一个IP或一段IP使用字典来猜解SNMP团体字符串(相当于查询设备信息或写入设备配置参数时所需的口令)。       
 * 命令：             
@@ -86,6 +92,7 @@ msf > use scanner/snmp/snmp_login (猜解SNMP团体字符串)
 msf auxiliary(ftp_version) > set RHOSTS 192.168.1.0/24                            
 msf auxiliary(ftp_version) > set THREADS 50                    
 msf auxiliary(ftp_version) > run              
+
 #### 2.7 编写自定义扫描器：             
 * 实例代码（Ruby）：          
 
