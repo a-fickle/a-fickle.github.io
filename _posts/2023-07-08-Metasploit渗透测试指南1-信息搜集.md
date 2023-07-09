@@ -20,6 +20,7 @@ cover-img: /assets/img/2023-07-08-Metasploit渗透测试指南1-信息搜集/cov
 * 作用：查找域名服务商、域名注册等信息。       
 * 命令：msf > whois [域名]                  
 * 注意：域名服务器可能由非测试目标厂商的其他厂商提供，如果未授权，不能对这种域名服务器进行任何测试行为。            
+
 #### 1.2 Netcraft：       
 * 作用：发现为该域名提供服务的服务器IP地址。           
 * 网址：http://searchdns.netcraft.com/                  
